@@ -1,0 +1,16 @@
+<%= form_for :record do |f| %>
+
+<table>
+  <tr>
+      <th><%= f.label :name %><br>
+      <%= f.text_field :name %></th>
+
+      <th><%= f.label :location %><br>
+      <%= f.text_field :location %></th>
+  </tr>
+</table>
+
+  <p>
+    <%= f.submit "Save Location" %>
+  </p>
+<% end %>
